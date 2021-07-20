@@ -1,0 +1,16 @@
+<h3>Register</h3>
+<%= form_with model: @person do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :nickname, placeholder: "nickname" %>
+  <%= form.text_field :last_name, placeholder: "last name" %>
+  <%= form.tex :age, placeholder: "age" %>
+  <%= form.text_field :peso, placeholder: "weight" %>
+  <%= form.text_field :altura, placeholder: "height" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @dog do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :motto, placeholder: 'motto' %>
+  <%= form.submit %>
+<% end %> -->

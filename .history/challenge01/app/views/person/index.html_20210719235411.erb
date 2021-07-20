@@ -1,0 +1,16 @@
+<ul>
+  <% @persons.each do |person| %>
+    <li><%= link_to person.name, person_path(person)  %></li>
+  <% end %>
+</ul>
+
+
+<table>
+  <% @pers.each do |per| %>
+    <tr>
+      <td><%= link_to per.name, per_path(per) %></td>
+      <td><%= button_to 'Edit', edit_per_path(per), method: 'get'%></td>
+      <td><%= button_to 'Remove', per_path(per), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New per", new_per_path %>
