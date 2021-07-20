@@ -12,9 +12,9 @@ class PersonController < ApplicationController
   end
 
   def create
-    @person = Person.create(person_params)
+    person = Person.create(person_params)
 
-    redirect_to person_index_path
+    redirect_to persons_path
   end
 
   def edit

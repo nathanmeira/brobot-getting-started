@@ -1,5 +1,5 @@
 <h3>Register</h3>
-<%= form_with model: @persons do |form| %>
+<%= form_for @person do |form| %>
   <%= form.text_field :name, placeholder: "name" %>
   <%= form.text_field :nickname, placeholder: "nickname" %>
   <%= form.text_field :last_name, placeholder: "last name" %>
@@ -8,3 +8,9 @@
   <%= form.text_field :altura, placeholder: "height" %>
   <%= form.submit %>
 <% end %>
+
+<!-- <%= form_for @dog do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :motto, placeholder: 'motto' %>
+  <%= form.submit %>
+<% end %> -->
