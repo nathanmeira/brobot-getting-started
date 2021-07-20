@@ -226,3 +226,678 @@ Processing by PeopleController#index as HTML
 Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4208)
 
 
+Started GET "/people" for ::1 at 2021-07-20 11:19:01 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 9683)
+
+
+Started GET "/people/new" for ::1 at 2021-07-20 11:19:06 -0300
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (Duration: 16.9ms | Allocations: 3914)
+  Rendered people/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 4269)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 22.6ms | ActiveRecord: 0.4ms | Allocations: 13847)
+
+
+Started POST "/people" for ::1 at 2021-07-20 11:19:31 -0300
+Processing by PeopleController#create as HTML
+  Parameters: {"authenticity_token"=>"XYCUb0jGbKXtJiL9Xr3qcIoNEOUguwbP7p7bDc+UUiMhfKdyUTjy1S4odbSo+GgIlrlEBgOMwe0nygNhnb5C4g==", "person"=>{"name"=>"Matheus", "nickname"=>"Mario", "last_name"=>"Ferreira", "age"=>"20", "height"=>"1.75", "weight"=>"65.0"}, "commit"=>"Create Person"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+  [1m[36mPerson Create (0.4ms)[0m  [1m[32mINSERT INTO "people" ("name", "nickname", "last_name", "age", "height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Matheus"], ["nickname", "Mario"], ["last_name", "Ferreira"], ["age", "20"], ["height", 1.75], ["weight", 65.0], ["created_at", "2021-07-20 14:19:31.971938"], ["updated_at", "2021-07-20 14:19:31.971938"]]
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+  [1m[35m (287.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/people/2
+Completed 302 Found in 296ms (ActiveRecord: 288.4ms | Allocations: 6025)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:19:32 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 6537)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/people/2" for ::1 at 2021-07-20 11:26:57 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 529)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 15944)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:27:15 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1844)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3648)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @parson.full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 11:27:23 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2830)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 4671)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Person:0x00007f87688a43e0>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @person.full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 11:28:02 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 368)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5394)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:28:30 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5369)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:32:33 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 366)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 5.3ms | ActiveRecord: 0.5ms | Allocations: 12133)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:32:52 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2805)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 4602)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Person:0x00007f876856b4f8>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @person.full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 11:33:31 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 211.8ms | Allocations: 147800)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.5ms | Allocations: 156306)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `full_name' for #<#<Class:0x000055a7ea417ef8>:0x000055a7ea4142a8>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started PUT "/__web_console/repl_sessions/39527c534749b7ad0f86dccb22c5c218" for ::1 at 2021-07-20 11:33:41 -0300
+Started PUT "/__web_console/repl_sessions/39527c534749b7ad0f86dccb22c5c218" for ::1 at 2021-07-20 11:33:42 -0300
+Started PUT "/__web_console/repl_sessions/39527c534749b7ad0f86dccb22c5c218" for ::1 at 2021-07-20 11:33:44 -0300
+Started PUT "/__web_console/repl_sessions/39527c534749b7ad0f86dccb22c5c218" for ::1 at 2021-07-20 11:33:46 -0300
+Started PUT "/__web_console/repl_sessions/39527c534749b7ad0f86dccb22c5c218" for ::1 at 2021-07-20 11:33:53 -0300
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 11:34:44 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 380)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 5384)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:10 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 540)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 15962)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:11 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 4210)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:11 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 4200)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:12 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4205)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:12 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 4180)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 11:53:44 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5381)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 12:49:01 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 375)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 11638)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:19 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 10585)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:20 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 4179)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:21 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 4198)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:21 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 4179)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:21 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 4187)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:21 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 4178)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:23:22 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 4177)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:25:42 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:71:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3104)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms | Allocations: 11613)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Person:0x00007fecac0fb3b0>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @person.full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 13:25:58 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:71:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 5433)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:26:33 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:71:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 5.5ms | ActiveRecord: 0.6ms | Allocations: 12163)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:26:35 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:71:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 4184)
+
+
+Started GET "/people" for ::1 at 2021-07-20 13:27:03 -0300
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 4886)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:29:19 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 10993)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:29:21 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.1ms | Allocations: 4182)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:18 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 5.3ms | ActiveRecord: 0.8ms | Allocations: 12050)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:19 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 4196)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:19 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 4172)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:20 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 4178)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:20 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 4180)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:20 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 4170)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:20 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 4160)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 13:30:45 -0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:70:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2813)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.9ms | Allocations: 11312)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Person:0x00007feca0011ca8>):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @person.full_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/people/show.html.erb:5
+Started PUT "/__web_console/repl_sessions/ada3dc279eb9a3a3b76b7fbb1cfb7c8c" for ::1 at 2021-07-20 13:30:52 -0300
+Started PUT "/__web_console/repl_sessions/ada3dc279eb9a3a3b76b7fbb1cfb7c8c" for ::1 at 2021-07-20 13:30:54 -0300
+Started PUT "/__web_console/repl_sessions/ada3dc279eb9a3a3b76b7fbb1cfb7c8c" for ::1 at 2021-07-20 13:30:56 -0300
+Started PUT "/__web_console/repl_sessions/ada3dc279eb9a3a3b76b7fbb1cfb7c8c" for ::1 at 2021-07-20 13:31:09 -0300
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" ORDER BY "people"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/people/show.html.erb:5
+Started GET "/people/2" for ::1 at 2021-07-20 15:14:20 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:66:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 393)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 11738)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 15:17:45 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.5ms | Allocations: 105459)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x00007fecb817cff8>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:19:03 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 1.5ms | Allocations: 105597)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x00007fecd006f328>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:19:18 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.1ms | Allocations: 98675)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x00007fecb409c1f0>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:19:25 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.1ms | Allocations: 98674)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x00007fecc0bbda28>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:19:28 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 0.4ms | Allocations: 98683)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x00007fecac159028>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:19:44 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.8ms | Allocations: 104528)
+
+
+  
+NameError (undefined local variable or method `height' for #<PeopleController:0x000055d9eb39f498>):
+  
+app/controllers/people_controller.rb:12:in `show'
+Started GET "/people/2" for ::1 at 2021-07-20 15:20:28 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:69:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 10.9ms | ActiveRecord: 0.5ms | Allocations: 14707)
+
+
+Started GET "/people/2" for ::1 at 2021-07-20 15:22:54 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 6.4ms | ActiveRecord: 0.9ms | Allocations: 12139)
+
+
+Started GET "/people" for ::1 at 2021-07-20 15:23:32 -0300
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 4882)
+
+
