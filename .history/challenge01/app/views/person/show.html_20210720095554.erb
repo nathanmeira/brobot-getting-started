@@ -1,0 +1,9 @@
+<h1><%= @person.name %></h1>
+<h4>"<%= @person.nickname %>"</h4>
+<h4>"<%= @person.last_name %>"</h4>
+<h4>"<%= @person.age %>"</h4>
+<h4>"<%= @person.altura %>"</h4>
+<h4>"<%= @person.peso %>"</h4>
+
+<%= link_to 'Remove', @person, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Back', person_index_path %>

@@ -1,0 +1,228 @@
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (145.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (133.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePeople (20210720132321)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "people" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "nickname" varchar, "last_name" varchar, "age" varchar, "height" float, "weight" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210720132321"]]
+  [1m[35m (135.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-20 13:23:32.695285"], ["updated_at", "2021-07-20 13:23:32.695285"]]
+  [1m[35m (100.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-07-20 10:23:47 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 479)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/routes" for ::1 at 2021-07-20 10:26:50 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-07-20 10:27:50 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1740)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/matheus/code/mmferreira2000/projects/back-end/brobot-getting-started/first_challenge/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: bdff1afdfbe7c189d484
+Version: webpack 4.46.0
+Time: 1321ms
+Built at: 07/20/2021 10:27:53 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a860ea931ce4c057e219.js    124 KiB  application  [emitted] [immutable]  application
+js/application-a860ea931ce4c057e219.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a860ea931ce4c057e219.js js/application-a860ea931ce4c057e219.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2549ms (Views: 2546.5ms | ActiveRecord: 0.4ms | Allocations: 25328)
+
+
+Started GET "/people/new" for ::1 at 2021-07-20 10:27:56 -0300
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (Duration: 83.0ms | Allocations: 6020)
+  Rendered people/new.html.erb within layouts/application (Duration: 83.8ms | Allocations: 6370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 87.6ms | ActiveRecord: 0.5ms | Allocations: 15949)
+
+
+Started POST "/people" for ::1 at 2021-07-20 10:29:12 -0300
+Processing by PeopleController#create as HTML
+  Parameters: {"authenticity_token"=>"OOWWaWllbP9gVeVHWpLNB5nMm22ezpRZmIW2edKO/IJEGaV0cJvyj6Nbsg6s109/hXjPjr35U3tR0W4VgKTsQw==", "person"=>{"name"=>"Matheus", "nickname"=>"Moreira", "last_name"=>"Ferreira", "age"=>"", "height"=>"1.75", "weight"=>"65.0"}, "commit"=>"Create Person"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+  [1m[36mPerson Create (0.5ms)[0m  [1m[32mINSERT INTO "people" ("name", "nickname", "last_name", "age", "height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Matheus"], ["nickname", "Moreira"], ["last_name", "Ferreira"], ["age", ""], ["height", 1.75], ["weight", 65.0], ["created_at", "2021-07-20 13:29:12.942103"], ["updated_at", "2021-07-20 13:29:12.942103"]]
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+  [1m[35m (294.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/people_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/people/1
+Completed 302 Found in 313ms (ActiveRecord: 294.8ms | Allocations: 5770)
+
+
+Started GET "/people/1" for ::1 at 2021-07-20 10:29:13 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5037)
+
+
+Started GET "/people" for ::1 at 2021-07-20 10:29:16 -0300
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 800)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4332)
+
+
+Started GET "/people/1/edit" for ::1 at 2021-07-20 10:29:25 -0300
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/_form.html.erb (Duration: 1.9ms | Allocations: 1563)
+  Rendered people/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1825)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 6058)
+
+
+Started PATCH "/people/1" for ::1 at 2021-07-20 10:29:36 -0300
+Processing by PeopleController#update as HTML
+  Parameters: {"authenticity_token"=>"feNalsXT8qfWIdThvvfl2m2SXw0P8sVM2H+HbM44mEINf8F/09BuqbfYYqXMmixq+4S7jW2x5SUWmGe7Va839g==", "person"=>{"name"=>"Matheus", "nickname"=>"Moreira", "last_name"=>"Ferreira", "age"=>"18", "height"=>"1.75", "weight"=>"65.0"}, "commit"=>"Update Person", "id"=>"1"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/people_controller.rb:40:in `block in update'
+  [1m[36mPerson Update (0.3ms)[0m  [1m[33mUPDATE "people" SET "age" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["age", "18"], ["updated_at", "2021-07-20 13:29:36.248754"], ["id", 1]]
+  ↳ app/controllers/people_controller.rb:40:in `block in update'
+  [1m[35m (164.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/people_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/people/1
+Completed 302 Found in 176ms (ActiveRecord: 164.8ms | Allocations: 6135)
+
+
+Started GET "/people/1" for ::1 at 2021-07-20 10:29:36 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 4214)
+
+
+Started GET "/people" for ::1 at 2021-07-20 10:29:39 -0300
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 4349)
+
+
+Started DELETE "/people/1" for ::1 at 2021-07-20 10:29:42 -0300
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YnFpvW29zSpY07ZXSjxe80Vrr6TAangyG7Adx8jWG6Vgkh39ZVcdcpjR3hyf0/2/hxuSrDCjoelQNimyJLGgAA==", "id"=>"1"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:62:in `set_person'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/people_controller.rb:52:in `destroy'
+  [1m[36mPerson Destroy (0.3ms)[0m  [1m[31mDELETE FROM "people" WHERE "people"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/people_controller.rb:52:in `destroy'
+  [1m[35m (195.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/people_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/people
+Completed 302 Found in 210ms (ActiveRecord: 195.7ms | Allocations: 5445)
+
+
+Started GET "/people" for ::1 at 2021-07-20 10:29:43 -0300
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:19
+  Rendered people/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4208)
+
+
