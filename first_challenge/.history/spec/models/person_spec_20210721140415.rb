@@ -5,8 +5,9 @@ RSpec.describe Person do
   let(:last_name) { 'Silva' }
   let(:height) { 2.0 }
   let(:weight) { 2.0 }
-  let(:person) { Person.new(name: name, last_name: last_name, height: height, weight: weight)}
 
+  subject(:person) { Person.new(name: name, last_name: last_name, height: height, weight: weight)}
+  
   describe "full_name" do
     context "When user has name and last_name" do
 

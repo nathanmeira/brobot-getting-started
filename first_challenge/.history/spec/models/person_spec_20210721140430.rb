@@ -1,12 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe Person do 
+RSpec.describe described_class do 
   let(:name) { 'Jorge' } 
   let(:last_name) { 'Silva' }
   let(:height) { 2.0 }
   let(:weight) { 2.0 }
-  let(:person) { Person.new(name: name, last_name: last_name, height: height, weight: weight)}
 
+  subject(:person) { Person.new(name: name, last_name: last_name, height: height, weight: weight)}
+  
   describe "full_name" do
     context "When user has name and last_name" do
 
@@ -22,7 +23,7 @@ RSpec.describe Person do
 
   describe "#imc" do
     context "When user fills height and weight" do
-      
+
       it "Returns IMC" do
         expect(person.imc).to eq(2.0)
       end
