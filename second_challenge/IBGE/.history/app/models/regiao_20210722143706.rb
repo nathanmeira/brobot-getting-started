@@ -1,0 +1,3 @@
+class Regiao < ApplicationRecord
+  
+end
