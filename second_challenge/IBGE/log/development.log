@@ -242,3 +242,378 @@ Migrating to AddSiglaToRegiao (20210722174034)
   [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(987695354606331315)[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "estados"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (22.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "roraima"], ["created_at", "2021-07-22 19:19:33.118292"], ["updated_at", "2021-07-22 19:19:33.118292"], ["sigla", "RO"]]
+  [1m[35m (83.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Update (2.4ms)[0m  [1m[33mUPDATE "estados" SET "nome" = $1, "updated_at" = $2 WHERE "estados"."id" = $3[0m  [["nome", "Rondônia"], ["updated_at", "2021-07-22 19:22:38.291266"], ["id", 1]]
+  [1m[35m (77.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.9ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-22 19:28:07.431674"], ["updated_at", "2021-07-22 19:28:07.431674"], ["sigla", "RO"]]
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (18.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-22 19:28:07.467544"], ["updated_at", "2021-07-22 19:28:07.467544"], ["sigla", "AC"]]
+  [1m[35m (36.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-22 19:28:07.525880"], ["updated_at", "2021-07-22 19:28:07.525880"], ["sigla", "AM"]]
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-22 19:28:07.561488"], ["updated_at", "2021-07-22 19:28:07.561488"], ["sigla", "RR"]]
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-22 19:28:07.596839"], ["updated_at", "2021-07-22 19:28:07.596839"], ["sigla", "PA"]]
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.1ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-22 19:28:07.632440"], ["updated_at", "2021-07-22 19:28:07.632440"], ["sigla", "AP"]]
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-22 19:28:07.668216"], ["updated_at", "2021-07-22 19:28:07.668216"], ["sigla", "TO"]]
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-22 19:28:07.704272"], ["updated_at", "2021-07-22 19:28:07.704272"], ["sigla", "MA"]]
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-22 19:28:07.739745"], ["updated_at", "2021-07-22 19:28:07.739745"], ["sigla", "PI"]]
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (2.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-22 19:28:07.776453"], ["updated_at", "2021-07-22 19:28:07.776453"], ["sigla", "CE"]]
+  [1m[35m (27.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-22 19:28:07.811795"], ["updated_at", "2021-07-22 19:28:07.811795"], ["sigla", "RN"]]
+  [1m[35m (30.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-22 19:28:07.847594"], ["updated_at", "2021-07-22 19:28:07.847594"], ["sigla", "PB"]]
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-22 19:28:07.885297"], ["updated_at", "2021-07-22 19:28:07.885297"], ["sigla", "PE"]]
+  [1m[35m (28.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-22 19:28:07.919005"], ["updated_at", "2021-07-22 19:28:07.919005"], ["sigla", "AL"]]
+  [1m[35m (29.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-22 19:28:07.955013"], ["updated_at", "2021-07-22 19:28:07.955013"], ["sigla", "SE"]]
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-22 19:28:07.990225"], ["updated_at", "2021-07-22 19:28:07.990225"], ["sigla", "BA"]]
+  [1m[35m (28.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-22 19:28:08.026134"], ["updated_at", "2021-07-22 19:28:08.026134"], ["sigla", "MG"]]
+  [1m[35m (28.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-22 19:28:08.062459"], ["updated_at", "2021-07-22 19:28:08.062459"], ["sigla", "ES"]]
+  [1m[35m (28.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-22 19:28:08.097638"], ["updated_at", "2021-07-22 19:28:08.097638"], ["sigla", "RJ"]]
+  [1m[35m (28.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-22 19:28:08.133340"], ["updated_at", "2021-07-22 19:28:08.133340"], ["sigla", "SP"]]
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-22 19:28:08.170942"], ["updated_at", "2021-07-22 19:28:08.170942"], ["sigla", "PR"]]
+  [1m[35m (24.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-22 19:28:08.206675"], ["updated_at", "2021-07-22 19:28:08.206675"], ["sigla", "SC"]]
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (2.1ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-22 19:28:08.254199"], ["updated_at", "2021-07-22 19:28:08.254199"], ["sigla", "RS"]]
+  [1m[35m (34.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (2.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-22 19:28:08.299990"], ["updated_at", "2021-07-22 19:28:08.299990"], ["sigla", "MS"]]
+  [1m[35m (35.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-22 19:28:08.347122"], ["updated_at", "2021-07-22 19:28:08.347122"], ["sigla", "MT"]]
+  [1m[35m (34.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-22 19:28:08.394087"], ["updated_at", "2021-07-22 19:28:08.394087"], ["sigla", "GO"]]
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-22 19:28:08.440673"], ["updated_at", "2021-07-22 19:28:08.440673"], ["sigla", "DF"]]
+  [1m[35m (35.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2021-07-22 16:28:45 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 45.8ms | Allocations: 308)
+Completed 200 OK in 101ms (Views: 71.1ms | ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+Started GET "/estados" for ::1 at 2021-07-22 16:28:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/estados"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/routes" for ::1 at 2021-07-22 16:28:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=estados" for ::1 at 2021-07-22 16:29:07 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"estados"}
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1209)
+
+
+Started GET "/rails/info/routes?path=estados" for ::1 at 2021-07-22 16:29:08 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"estados"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 497)
+
+
+Started GET "/routes" for ::1 at 2021-07-22 16:30:22 -0300
+  
+NoMethodError (undefined method `root_to' for #<ActionDispatch::Routing::Mapper:0x0000559a96e54ad0>
+Did you mean?  root):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/favicon.ico" for ::1 at 2021-07-22 16:30:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-07-22 16:30:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-07-22 16:30:45 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/matheus/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.5ms | Allocations: 192)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 919)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-07-22 16:30:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/estados" for ::1 at 2021-07-22 16:30:50 -0300
+Processing by EstadosController#index as HTML
+  [1m[36mEstado Load (1.0ms)[0m  [1m[34mSELECT "estados".* FROM "estados"[0m
+  ↳ app/controllers/estados_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 28.5ms | ActiveRecord: 7.7ms | Allocations: 10020)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-22 19:36:06.647685"], ["updated_at", "2021-07-22 19:36:06.647685"], ["sigla", "RO"]]
+  [1m[35m (38.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-22 19:36:06.692568"], ["updated_at", "2021-07-22 19:36:06.692568"], ["sigla", "AC"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-22 19:36:06.727852"], ["updated_at", "2021-07-22 19:36:06.727852"], ["sigla", "AM"]]
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-22 19:36:06.752790"], ["updated_at", "2021-07-22 19:36:06.752790"], ["sigla", "RR"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-22 19:36:06.787984"], ["updated_at", "2021-07-22 19:36:06.787984"], ["sigla", "PA"]]
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-22 19:36:06.824149"], ["updated_at", "2021-07-22 19:36:06.824149"], ["sigla", "AP"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-22 19:36:06.859870"], ["updated_at", "2021-07-22 19:36:06.859870"], ["sigla", "TO"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-22 19:36:06.895792"], ["updated_at", "2021-07-22 19:36:06.895792"], ["sigla", "MA"]]
+  [1m[35m (33.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-22 19:36:06.931793"], ["updated_at", "2021-07-22 19:36:06.931793"], ["sigla", "PI"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-22 19:36:06.966854"], ["updated_at", "2021-07-22 19:36:06.966854"], ["sigla", "CE"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-22 19:36:07.002496"], ["updated_at", "2021-07-22 19:36:07.002496"], ["sigla", "RN"]]
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-22 19:36:07.027207"], ["updated_at", "2021-07-22 19:36:07.027207"], ["sigla", "PB"]]
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-22 19:36:07.063255"], ["updated_at", "2021-07-22 19:36:07.063255"], ["sigla", "PE"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-22 19:36:07.098834"], ["updated_at", "2021-07-22 19:36:07.098834"], ["sigla", "AL"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-22 19:36:07.134658"], ["updated_at", "2021-07-22 19:36:07.134658"], ["sigla", "SE"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-22 19:36:07.170233"], ["updated_at", "2021-07-22 19:36:07.170233"], ["sigla", "BA"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-22 19:36:07.206276"], ["updated_at", "2021-07-22 19:36:07.206276"], ["sigla", "MG"]]
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-22 19:36:07.241819"], ["updated_at", "2021-07-22 19:36:07.241819"], ["sigla", "ES"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-22 19:36:07.277637"], ["updated_at", "2021-07-22 19:36:07.277637"], ["sigla", "RJ"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-22 19:36:07.313163"], ["updated_at", "2021-07-22 19:36:07.313163"], ["sigla", "SP"]]
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-22 19:36:07.349155"], ["updated_at", "2021-07-22 19:36:07.349155"], ["sigla", "PR"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-22 19:36:07.385176"], ["updated_at", "2021-07-22 19:36:07.385176"], ["sigla", "SC"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-22 19:36:07.420999"], ["updated_at", "2021-07-22 19:36:07.420999"], ["sigla", "RS"]]
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-22 19:36:07.456514"], ["updated_at", "2021-07-22 19:36:07.456514"], ["sigla", "MS"]]
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-22 19:36:07.492431"], ["updated_at", "2021-07-22 19:36:07.492431"], ["sigla", "MT"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-22 19:36:07.527752"], ["updated_at", "2021-07-22 19:36:07.527752"], ["sigla", "GO"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-22 19:36:07.563682"], ["updated_at", "2021-07-22 19:36:07.563682"], ["sigla", "DF"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEstado Load (0.4ms)[0m  [1m[34mSELECT "estados".* FROM "estados" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/estados" for ::1 at 2021-07-22 16:36:32 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EstadosController#index as HTML
+  [1m[36mEstado Load (0.5ms)[0m  [1m[34mSELECT "estados".* FROM "estados"[0m
+  ↳ app/controllers/estados_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 3.9ms | Allocations: 13144)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-07-22 16:36:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
