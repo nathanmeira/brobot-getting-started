@@ -617,3 +617,453 @@ puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
 puma (4.3.8) lib/puma/server.rb:472:in `process_client'
 puma (4.3.8) lib/puma/server.rb:328:in `block in run'
 puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (13.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-23 12:02:45.415260"], ["updated_at", "2021-07-23 12:02:45.415260"], ["sigla", "RO"]]
+  [1m[35m (43.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-23 12:02:45.565070"], ["updated_at", "2021-07-23 12:02:45.565070"], ["sigla", "AC"]]
+  [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-23 12:02:45.621365"], ["updated_at", "2021-07-23 12:02:45.621365"], ["sigla", "AM"]]
+  [1m[35m (54.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-23 12:02:45.679881"], ["updated_at", "2021-07-23 12:02:45.679881"], ["sigla", "RR"]]
+  [1m[35m (41.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-23 12:02:45.726482"], ["updated_at", "2021-07-23 12:02:45.726482"], ["sigla", "PA"]]
+  [1m[35m (43.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-23 12:02:45.773345"], ["updated_at", "2021-07-23 12:02:45.773345"], ["sigla", "AP"]]
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-23 12:02:45.809251"], ["updated_at", "2021-07-23 12:02:45.809251"], ["sigla", "TO"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-23 12:02:45.844827"], ["updated_at", "2021-07-23 12:02:45.844827"], ["sigla", "MA"]]
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-23 12:02:45.880888"], ["updated_at", "2021-07-23 12:02:45.880888"], ["sigla", "PI"]]
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-23 12:02:45.916547"], ["updated_at", "2021-07-23 12:02:45.916547"], ["sigla", "CE"]]
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-23 12:02:45.952094"], ["updated_at", "2021-07-23 12:02:45.952094"], ["sigla", "RN"]]
+  [1m[35m (46.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-23 12:02:46.001833"], ["updated_at", "2021-07-23 12:02:46.001833"], ["sigla", "PB"]]
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-23 12:02:46.036589"], ["updated_at", "2021-07-23 12:02:46.036589"], ["sigla", "PE"]]
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-23 12:02:46.072788"], ["updated_at", "2021-07-23 12:02:46.072788"], ["sigla", "AL"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-23 12:02:46.108372"], ["updated_at", "2021-07-23 12:02:46.108372"], ["sigla", "SE"]]
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-23 12:02:46.143887"], ["updated_at", "2021-07-23 12:02:46.143887"], ["sigla", "BA"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-23 12:02:46.180783"], ["updated_at", "2021-07-23 12:02:46.180783"], ["sigla", "MG"]]
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-23 12:02:46.215806"], ["updated_at", "2021-07-23 12:02:46.215806"], ["sigla", "ES"]]
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-23 12:02:46.251175"], ["updated_at", "2021-07-23 12:02:46.251175"], ["sigla", "RJ"]]
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-23 12:02:46.286815"], ["updated_at", "2021-07-23 12:02:46.286815"], ["sigla", "SP"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-23 12:02:46.324397"], ["updated_at", "2021-07-23 12:02:46.324397"], ["sigla", "PR"]]
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-23 12:02:46.358286"], ["updated_at", "2021-07-23 12:02:46.358286"], ["sigla", "SC"]]
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-23 12:02:46.394240"], ["updated_at", "2021-07-23 12:02:46.394240"], ["sigla", "RS"]]
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-23 12:02:46.431537"], ["updated_at", "2021-07-23 12:02:46.431537"], ["sigla", "MS"]]
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-23 12:02:46.466025"], ["updated_at", "2021-07-23 12:02:46.466025"], ["sigla", "MT"]]
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-23 12:02:46.501452"], ["updated_at", "2021-07-23 12:02:46.501452"], ["sigla", "GO"]]
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-23 12:02:46.537459"], ["updated_at", "2021-07-23 12:02:46.537459"], ["sigla", "DF"]]
+  [1m[35m (32.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:36.999552"], ["updated_at", "2021-07-23 12:03:36.999552"], ["sigla", "RO"]]
+  [1m[35m (91.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.094620"], ["updated_at", "2021-07-23 12:03:37.094620"], ["sigla", "AC"]]
+  [1m[35m (32.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.130357"], ["updated_at", "2021-07-23 12:03:37.130357"], ["sigla", "AM"]]
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.165760"], ["updated_at", "2021-07-23 12:03:37.165760"], ["sigla", "RR"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.201542"], ["updated_at", "2021-07-23 12:03:37.201542"], ["sigla", "PA"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.237265"], ["updated_at", "2021-07-23 12:03:37.237265"], ["sigla", "AP"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>1, \"sigla\"=>\"N\", \"nome\"=>\"Norte\"}"], ["created_at", "2021-07-23 12:03:37.273133"], ["updated_at", "2021-07-23 12:03:37.273133"], ["sigla", "TO"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.308881"], ["updated_at", "2021-07-23 12:03:37.308881"], ["sigla", "MA"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.344554"], ["updated_at", "2021-07-23 12:03:37.344554"], ["sigla", "PI"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.380725"], ["updated_at", "2021-07-23 12:03:37.380725"], ["sigla", "CE"]]
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.416113"], ["updated_at", "2021-07-23 12:03:37.416113"], ["sigla", "RN"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.451482"], ["updated_at", "2021-07-23 12:03:37.451482"], ["sigla", "PB"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.487217"], ["updated_at", "2021-07-23 12:03:37.487217"], ["sigla", "PE"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.523086"], ["updated_at", "2021-07-23 12:03:37.523086"], ["sigla", "AL"]]
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.559165"], ["updated_at", "2021-07-23 12:03:37.559165"], ["sigla", "SE"]]
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>2, \"sigla\"=>\"NE\", \"nome\"=>\"Nordeste\"}"], ["created_at", "2021-07-23 12:03:37.594469"], ["updated_at", "2021-07-23 12:03:37.594469"], ["sigla", "BA"]]
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>3, \"sigla\"=>\"SE\", \"nome\"=>\"Sudeste\"}"], ["created_at", "2021-07-23 12:03:37.652966"], ["updated_at", "2021-07-23 12:03:37.652966"], ["sigla", "MG"]]
+  [1m[35m (54.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (5.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>3, \"sigla\"=>\"SE\", \"nome\"=>\"Sudeste\"}"], ["created_at", "2021-07-23 12:03:37.711629"], ["updated_at", "2021-07-23 12:03:37.711629"], ["sigla", "ES"]]
+  [1m[35m (26.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (14.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>3, \"sigla\"=>\"SE\", \"nome\"=>\"Sudeste\"}"], ["created_at", "2021-07-23 12:03:37.746183"], ["updated_at", "2021-07-23 12:03:37.746183"], ["sigla", "RJ"]]
+  [1m[35m (76.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (2.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>3, \"sigla\"=>\"SE\", \"nome\"=>\"Sudeste\"}"], ["created_at", "2021-07-23 12:03:37.844291"], ["updated_at", "2021-07-23 12:03:37.844291"], ["sigla", "SP"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>4, \"sigla\"=>\"S\", \"nome\"=>\"Sul\"}"], ["created_at", "2021-07-23 12:03:37.890751"], ["updated_at", "2021-07-23 12:03:37.890751"], ["sigla", "PR"]]
+  [1m[35m (30.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>4, \"sigla\"=>\"S\", \"nome\"=>\"Sul\"}"], ["created_at", "2021-07-23 12:03:37.936939"], ["updated_at", "2021-07-23 12:03:37.936939"], ["sigla", "SC"]]
+  [1m[35m (34.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>4, \"sigla\"=>\"S\", \"nome\"=>\"Sul\"}"], ["created_at", "2021-07-23 12:03:37.981660"], ["updated_at", "2021-07-23 12:03:37.981660"], ["sigla", "RS"]]
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>5, \"sigla\"=>\"CO\", \"nome\"=>\"Centro-Oeste\"}"], ["created_at", "2021-07-23 12:03:38.017028"], ["updated_at", "2021-07-23 12:03:38.017028"], ["sigla", "MS"]]
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>5, \"sigla\"=>\"CO\", \"nome\"=>\"Centro-Oeste\"}"], ["created_at", "2021-07-23 12:03:38.052800"], ["updated_at", "2021-07-23 12:03:38.052800"], ["sigla", "MT"]]
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>5, \"sigla\"=>\"CO\", \"nome\"=>\"Centro-Oeste\"}"], ["created_at", "2021-07-23 12:03:38.088941"], ["updated_at", "2021-07-23 12:03:38.088941"], ["sigla", "GO"]]
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.1ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "{\"id\"=>5, \"sigla\"=>\"CO\", \"nome\"=>\"Centro-Oeste\"}"], ["created_at", "2021-07-23 12:03:38.124366"], ["updated_at", "2021-07-23 12:03:38.124366"], ["sigla", "DF"]]
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(987695354606331315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRegiaoToEstado (20210723121634)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210723121634"]]
+  [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(987695354606331315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-23 12:18:02.494680"], ["updated_at", "2021-07-23 12:18:02.494680"], ["sigla", "RO"]]
+  [1m[35m (113.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-23 12:18:02.613855"], ["updated_at", "2021-07-23 12:18:02.613855"], ["sigla", "AC"]]
+  [1m[35m (32.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-23 12:18:02.649442"], ["updated_at", "2021-07-23 12:18:02.649442"], ["sigla", "AM"]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-23 12:18:02.685903"], ["updated_at", "2021-07-23 12:18:02.685903"], ["sigla", "RR"]]
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-23 12:18:02.721431"], ["updated_at", "2021-07-23 12:18:02.721431"], ["sigla", "PA"]]
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-23 12:18:02.757418"], ["updated_at", "2021-07-23 12:18:02.757418"], ["sigla", "AP"]]
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-23 12:18:02.793251"], ["updated_at", "2021-07-23 12:18:02.793251"], ["sigla", "TO"]]
+  [1m[35m (30.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.9ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-23 12:18:02.828896"], ["updated_at", "2021-07-23 12:18:02.828896"], ["sigla", "MA"]]
+  [1m[35m (30.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-23 12:18:02.866333"], ["updated_at", "2021-07-23 12:18:02.866333"], ["sigla", "PI"]]
+  [1m[35m (27.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-23 12:18:02.899694"], ["updated_at", "2021-07-23 12:18:02.899694"], ["sigla", "CE"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-23 12:18:02.935618"], ["updated_at", "2021-07-23 12:18:02.935618"], ["sigla", "RN"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-23 12:18:02.971514"], ["updated_at", "2021-07-23 12:18:02.971514"], ["sigla", "PB"]]
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-23 12:18:03.007302"], ["updated_at", "2021-07-23 12:18:03.007302"], ["sigla", "PE"]]
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-23 12:18:03.043047"], ["updated_at", "2021-07-23 12:18:03.043047"], ["sigla", "AL"]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-23 12:18:03.080694"], ["updated_at", "2021-07-23 12:18:03.080694"], ["sigla", "SE"]]
+  [1m[35m (26.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-23 12:18:03.117261"], ["updated_at", "2021-07-23 12:18:03.117261"], ["sigla", "BA"]]
+  [1m[35m (25.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-23 12:18:03.150644"], ["updated_at", "2021-07-23 12:18:03.150644"], ["sigla", "MG"]]
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-23 12:18:03.186085"], ["updated_at", "2021-07-23 12:18:03.186085"], ["sigla", "ES"]]
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-23 12:18:03.221896"], ["updated_at", "2021-07-23 12:18:03.221896"], ["sigla", "RJ"]]
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-23 12:18:03.257706"], ["updated_at", "2021-07-23 12:18:03.257706"], ["sigla", "SP"]]
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-23 12:18:03.293387"], ["updated_at", "2021-07-23 12:18:03.293387"], ["sigla", "PR"]]
+  [1m[35m (30.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-23 12:18:03.328759"], ["updated_at", "2021-07-23 12:18:03.328759"], ["sigla", "SC"]]
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (18.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-23 12:18:03.365416"], ["updated_at", "2021-07-23 12:18:03.365416"], ["sigla", "RS"]]
+  [1m[35m (46.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-23 12:18:03.435664"], ["updated_at", "2021-07-23 12:18:03.435664"], ["sigla", "MS"]]
+  [1m[35m (138.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-23 12:18:03.582670"], ["updated_at", "2021-07-23 12:18:03.582670"], ["sigla", "MT"]]
+  [1m[35m (36.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-23 12:18:03.628514"], ["updated_at", "2021-07-23 12:18:03.628514"], ["sigla", "GO"]]
+  [1m[35m (25.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-23 12:18:03.664163"], ["updated_at", "2021-07-23 12:18:03.664163"], ["sigla", "DF"]]
+  [1m[35m (27.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegiao Load (0.6ms)[0m  [1m[34mSELECT "regiaos".* FROM "regiaos" ORDER BY "regiaos"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(987695354606331315)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRegiaoToEstado (20210723121634)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210723121634"]]
+  [1m[35m (36.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(987695354606331315)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(987695354606331315)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRegiaoToEstado (20210723121634)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210723121634"]]
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRegiaoToRegiao (20210723133103)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210723133103"]]
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(987695354606331315)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(987695354606331315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRegiaoToRegiao (20210723133103)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210723133103"]]
+  [1m[35m (136.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(987695354606331315)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-23 14:40:38.060010"], ["updated_at", "2021-07-23 14:40:38.060010"], ["sigla", "RO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (94.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-23 14:40:38.168496"], ["updated_at", "2021-07-23 14:40:38.168496"], ["sigla", "AC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (89.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-23 14:40:38.269712"], ["updated_at", "2021-07-23 14:40:38.269712"], ["sigla", "AM"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-23 14:40:38.306482"], ["updated_at", "2021-07-23 14:40:38.306482"], ["sigla", "RR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-23 14:40:38.351864"], ["updated_at", "2021-07-23 14:40:38.351864"], ["sigla", "PA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-23 14:40:38.388665"], ["updated_at", "2021-07-23 14:40:38.388665"], ["sigla", "AP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-23 14:40:38.424252"], ["updated_at", "2021-07-23 14:40:38.424252"], ["sigla", "TO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-23 14:40:38.462698"], ["updated_at", "2021-07-23 14:40:38.462698"], ["sigla", "MA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-23 14:40:38.506867"], ["updated_at", "2021-07-23 14:40:38.506867"], ["sigla", "PI"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-23 14:40:38.542589"], ["updated_at", "2021-07-23 14:40:38.542589"], ["sigla", "CE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-23 14:40:38.578638"], ["updated_at", "2021-07-23 14:40:38.578638"], ["sigla", "RN"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-23 14:40:38.614036"], ["updated_at", "2021-07-23 14:40:38.614036"], ["sigla", "PB"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (43.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-23 14:40:38.665546"], ["updated_at", "2021-07-23 14:40:38.665546"], ["sigla", "PE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-23 14:40:38.710599"], ["updated_at", "2021-07-23 14:40:38.710599"], ["sigla", "AL"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-23 14:40:38.746289"], ["updated_at", "2021-07-23 14:40:38.746289"], ["sigla", "SE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.9ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-23 14:40:38.782150"], ["updated_at", "2021-07-23 14:40:38.782150"], ["sigla", "BA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.9ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-23 14:40:38.817970"], ["updated_at", "2021-07-23 14:40:38.817970"], ["sigla", "MG"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-23 14:40:38.852570"], ["updated_at", "2021-07-23 14:40:38.852570"], ["sigla", "ES"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-23 14:40:38.889494"], ["updated_at", "2021-07-23 14:40:38.889494"], ["sigla", "RJ"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-23 14:40:38.927219"], ["updated_at", "2021-07-23 14:40:38.927219"], ["sigla", "SP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-23 14:40:38.972799"], ["updated_at", "2021-07-23 14:40:38.972799"], ["sigla", "PR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-23 14:40:39.007089"], ["updated_at", "2021-07-23 14:40:39.007089"], ["sigla", "SC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-23 14:40:39.042544"], ["updated_at", "2021-07-23 14:40:39.042544"], ["sigla", "RS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-23 14:40:39.100533"], ["updated_at", "2021-07-23 14:40:39.100533"], ["sigla", "MS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.2ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-23 14:40:39.139224"], ["updated_at", "2021-07-23 14:40:39.139224"], ["sigla", "MT"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-23 14:40:39.184060"], ["updated_at", "2021-07-23 14:40:39.184060"], ["sigla", "GO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-23 14:40:39.219872"], ["updated_at", "2021-07-23 14:40:39.219872"], ["sigla", "DF"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'

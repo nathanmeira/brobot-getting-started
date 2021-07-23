@@ -12,9 +12,10 @@ class Regiao < ApplicationRecord
     result =  JSON.parse(response.body)
 
     result.each do |hash|
-      regiao = Regiao.new
-      regiao.regiao = hash['regiao']
-      regiao.save!
+      region = Estado.new
+      region.nome = hash['nome']
+      region.sigla = hash['sigla']
+      region.save!
       p "Regiao: ", hash
     end
      true

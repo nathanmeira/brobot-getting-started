@@ -3,5 +3,6 @@ namespace :anything do
   task estados: :environment do
     puts 'my fisrt task!!!!!!!!!!!!!'
     estado = Estado.state
+    estado.save!
   end
 end

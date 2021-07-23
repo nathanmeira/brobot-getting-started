@@ -13,7 +13,7 @@ class Regiao < ApplicationRecord
 
     result.each do |hash|
       regiao = Regiao.new
-      regiao.regiao = hash['regiao']
+      regiao.region = hash['nome']
       regiao.save!
       p "Regiao: ", hash
     end
