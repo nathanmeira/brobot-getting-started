@@ -1,7 +1,7 @@
 namespace :anything do
-  desc 'my first task'
+  desc 'Task to print brazilian states'
   task estados: :environment do
-    puts 'my fisrt task!!!!!!!!!!!!!'
+    puts 'Estados do Brasil'
     estado = Estado.state
   end
 end

@@ -1067,3 +1067,327 @@ Migrating to AddRegiaoToRegiao (20210723133103)
   ↳ app/models/estado.rb:19:in `block in state'
   [1m[35m (28.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (9.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-26 10:39:33.083206"], ["updated_at", "2021-07-26 10:39:33.083206"], ["sigla", "RO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (41.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-26 10:39:33.163471"], ["updated_at", "2021-07-26 10:39:33.163471"], ["sigla", "AC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-26 10:39:33.198693"], ["updated_at", "2021-07-26 10:39:33.198693"], ["sigla", "AM"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-26 10:39:33.237945"], ["updated_at", "2021-07-26 10:39:33.237945"], ["sigla", "RR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-26 10:39:33.292332"], ["updated_at", "2021-07-26 10:39:33.292332"], ["sigla", "PA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-26 10:39:33.328110"], ["updated_at", "2021-07-26 10:39:33.328110"], ["sigla", "AP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-26 10:39:33.363938"], ["updated_at", "2021-07-26 10:39:33.363938"], ["sigla", "TO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-26 10:39:33.400124"], ["updated_at", "2021-07-26 10:39:33.400124"], ["sigla", "MA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (42.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-26 10:39:33.446805"], ["updated_at", "2021-07-26 10:39:33.446805"], ["sigla", "PI"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-26 10:39:33.493853"], ["updated_at", "2021-07-26 10:39:33.493853"], ["sigla", "CE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (42.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-26 10:39:33.543589"], ["updated_at", "2021-07-26 10:39:33.543589"], ["sigla", "RN"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-26 10:39:33.599019"], ["updated_at", "2021-07-26 10:39:33.599019"], ["sigla", "PB"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-26 10:39:33.635328"], ["updated_at", "2021-07-26 10:39:33.635328"], ["sigla", "PE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (39.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-26 10:39:33.681602"], ["updated_at", "2021-07-26 10:39:33.681602"], ["sigla", "AL"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (5.1ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-26 10:39:33.728788"], ["updated_at", "2021-07-26 10:39:33.728788"], ["sigla", "SE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (45.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-26 10:39:33.786721"], ["updated_at", "2021-07-26 10:39:33.786721"], ["sigla", "BA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-26 10:39:33.862907"], ["updated_at", "2021-07-26 10:39:33.862907"], ["sigla", "MG"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (34.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-26 10:39:33.901606"], ["updated_at", "2021-07-26 10:39:33.901606"], ["sigla", "ES"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-26 10:39:33.937674"], ["updated_at", "2021-07-26 10:39:33.937674"], ["sigla", "RJ"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (42.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (7.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-26 10:39:33.984571"], ["updated_at", "2021-07-26 10:39:33.984571"], ["sigla", "SP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (35.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.1ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-26 10:39:34.031970"], ["updated_at", "2021-07-26 10:39:34.031970"], ["sigla", "PR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-26 10:39:34.066541"], ["updated_at", "2021-07-26 10:39:34.066541"], ["sigla", "SC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-26 10:39:34.102859"], ["updated_at", "2021-07-26 10:39:34.102859"], ["sigla", "RS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.3ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-26 10:39:34.138404"], ["updated_at", "2021-07-26 10:39:34.138404"], ["sigla", "MS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (43.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-26 10:39:34.185219"], ["updated_at", "2021-07-26 10:39:34.185219"], ["sigla", "MT"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (43.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-26 10:39:34.232203"], ["updated_at", "2021-07-26 10:39:34.232203"], ["sigla", "GO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-26 10:39:34.267601"], ["updated_at", "2021-07-26 10:39:34.267601"], ["sigla", "DF"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rondônia"], ["created_at", "2021-07-26 10:40:04.161562"], ["updated_at", "2021-07-26 10:40:04.161562"], ["sigla", "RO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Acre"], ["created_at", "2021-07-26 10:40:04.198072"], ["updated_at", "2021-07-26 10:40:04.198072"], ["sigla", "AC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (58.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amazonas"], ["created_at", "2021-07-26 10:40:04.262090"], ["updated_at", "2021-07-26 10:40:04.262090"], ["sigla", "AM"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (35.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Roraima"], ["created_at", "2021-07-26 10:40:04.302889"], ["updated_at", "2021-07-26 10:40:04.302889"], ["sigla", "RR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pará"], ["created_at", "2021-07-26 10:40:04.339434"], ["updated_at", "2021-07-26 10:40:04.339434"], ["sigla", "PA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Amapá"], ["created_at", "2021-07-26 10:40:04.374602"], ["updated_at", "2021-07-26 10:40:04.374602"], ["sigla", "AP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Tocantins"], ["created_at", "2021-07-26 10:40:04.421332"], ["updated_at", "2021-07-26 10:40:04.421332"], ["sigla", "TO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.0ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Maranhão"], ["created_at", "2021-07-26 10:40:04.457838"], ["updated_at", "2021-07-26 10:40:04.457838"], ["sigla", "MA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Piauí"], ["created_at", "2021-07-26 10:40:04.493660"], ["updated_at", "2021-07-26 10:40:04.493660"], ["sigla", "PI"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Ceará"], ["created_at", "2021-07-26 10:40:04.529517"], ["updated_at", "2021-07-26 10:40:04.529517"], ["sigla", "CE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Norte"], ["created_at", "2021-07-26 10:40:04.564200"], ["updated_at", "2021-07-26 10:40:04.564200"], ["sigla", "RN"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraíba"], ["created_at", "2021-07-26 10:40:04.599926"], ["updated_at", "2021-07-26 10:40:04.599926"], ["sigla", "PB"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.4ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Pernambuco"], ["created_at", "2021-07-26 10:40:04.635692"], ["updated_at", "2021-07-26 10:40:04.635692"], ["sigla", "PE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Alagoas"], ["created_at", "2021-07-26 10:40:04.672138"], ["updated_at", "2021-07-26 10:40:04.672138"], ["sigla", "AL"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Sergipe"], ["created_at", "2021-07-26 10:40:04.707774"], ["updated_at", "2021-07-26 10:40:04.707774"], ["sigla", "SE"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Bahia"], ["created_at", "2021-07-26 10:40:04.743399"], ["updated_at", "2021-07-26 10:40:04.743399"], ["sigla", "BA"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Minas Gerais"], ["created_at", "2021-07-26 10:40:04.779312"], ["updated_at", "2021-07-26 10:40:04.779312"], ["sigla", "MG"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Espírito Santo"], ["created_at", "2021-07-26 10:40:04.838896"], ["updated_at", "2021-07-26 10:40:04.838896"], ["sigla", "ES"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.6ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio de Janeiro"], ["created_at", "2021-07-26 10:40:04.874909"], ["updated_at", "2021-07-26 10:40:04.874909"], ["sigla", "RJ"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "São Paulo"], ["created_at", "2021-07-26 10:40:04.910838"], ["updated_at", "2021-07-26 10:40:04.910838"], ["sigla", "SP"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (30.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Paraná"], ["created_at", "2021-07-26 10:40:04.947137"], ["updated_at", "2021-07-26 10:40:04.947137"], ["sigla", "PR"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (28.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Santa Catarina"], ["created_at", "2021-07-26 10:40:04.983245"], ["updated_at", "2021-07-26 10:40:04.983245"], ["sigla", "SC"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (1.7ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Rio Grande do Sul"], ["created_at", "2021-07-26 10:40:05.018890"], ["updated_at", "2021-07-26 10:40:05.018890"], ["sigla", "RS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso do Sul"], ["created_at", "2021-07-26 10:40:05.054833"], ["updated_at", "2021-07-26 10:40:05.054833"], ["sigla", "MS"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Mato Grosso"], ["created_at", "2021-07-26 10:40:05.090839"], ["updated_at", "2021-07-26 10:40:05.090839"], ["sigla", "MT"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.8ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Goiás"], ["created_at", "2021-07-26 10:40:05.139684"], ["updated_at", "2021-07-26 10:40:05.139684"], ["sigla", "GO"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[36mEstado Create (0.5ms)[0m  [1m[32mINSERT INTO "estados" ("nome", "created_at", "updated_at", "sigla") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "Distrito Federal"], ["created_at", "2021-07-26 10:40:05.187904"], ["updated_at", "2021-07-26 10:40:05.187904"], ["sigla", "DF"]]
+  ↳ app/models/estado.rb:19:in `block in state'
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/estado.rb:19:in `block in state'
